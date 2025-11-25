@@ -9,10 +9,15 @@
 </script>
 
 <button class="user__avatar">
-	<img src={icon} class="user__icon">
+	<img src={icon} alt="" class="user__icon">
 </button>
 
 <style>
+	* {
+		transition: 200ms ease;
+		margin: 0px;
+		padding: 0px;
+	}
 	.user__avatar {
 		display: flex;
 		align-items: center;

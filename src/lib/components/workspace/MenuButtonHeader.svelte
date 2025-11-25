@@ -1,21 +1,14 @@
 <script lang="ts">
 	type Props = {
 		title?:String;
-		icon?:string;
-		description?:string;
 	}
 
 	let {
 		title = "Вкладка_1",
-		icon ="src/lib/assets/Home.svg",
-		description ="ххуй"
 	}: Props = $props();
 </script>
 
 <button class="menu__button">
-	{#if icon}
-		<img src={icon} alt={description} class="menu__button__icon"> 
-	{/if}
 	<p class="menu__button__text">{title}</p>
 </button>
 
@@ -23,8 +16,9 @@
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 	
 	* {
-		margin: 0;
-		padding: 0;
+		transition: 200ms ease;
+		margin: 0px;
+		padding: 0px;
 	}
 	.menu__button {
 		overflow: hidden;
@@ -36,25 +30,19 @@
 		display: flex;
 		align-items: center;
 		background-color: transparent;
-		margin-top: 1.5vw;
-	}
-
-	.menu__button__icon {
-		width: 1.5vw;
-		height: 1.5vw;
-		margin-right: 0.2vw;
+		justify-content: center;
 	}
 
 	.menu__button__text {
 		font-family: "Montserrat", sans-serif;
-		font-size: 0.8vw;
+		font-size: 1vw;
 	}
 
-	.menu__button:hover {
+		.menu__button:hover {
 		cursor: pointer;
 		background-color: rgba(151, 151, 151, 0.1);
 		border-radius: 10px;
-		padding: 0.5vw;
+		padding: 0.1vw;
 	}
 
 	.menu__button:active {

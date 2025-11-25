@@ -1,9 +1,9 @@
 <script lang="ts">
-	import MenuButtonSidebar from '$lib/components/MenuButtonSidebar.svelte';
-	import MenuButtonHeader from '$lib/components/MenuButtonHeader.svelte';
-	import Search from '$lib/components/Search.svelte';
-	import LogoutButton from '$lib/components/LogoutButton.svelte';
-	import UserAvatar from '$lib/components/UserAvatar.svelte';
+	import MenuButtonSidebar from '$lib/components/workspace/MenuButtonSidebar.svelte';
+	import MenuButtonHeader from '$lib/components/workspace//MenuButtonHeader.svelte';
+	import Search from '$lib/components/workspace/Search.svelte';
+	import LogoutButton from '$lib/components/workspace/LogoutButton.svelte';
+	import UserAvatar from '$lib/components/workspace/UserAvatar.svelte';
 
 	type Props = {
 		icon_notif?:string;
@@ -34,7 +34,7 @@
 					title="Отчёты"
 				/>
 				<section class="user__side">
-					<img src={icon_notif} class="notifications">
+					<img src={icon_notif} alt="" class="notifications">
 					<Search/>
 					<UserAvatar />
 				</section>
@@ -78,7 +78,8 @@
 		padding: 0;
 	}
 	.workspace {
-		margin: 10vh 20vw;
+		margin-top: 10vh;
+		margin-left: 2.5vw;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -146,9 +147,8 @@
 	}
 
 	.notifications {
-		width: 3vw;
-		height: 3vw;
-
+		width: 2.5vw;
+		height: 2.5vw;
 		margin-left: 1vw;
 	}
 
