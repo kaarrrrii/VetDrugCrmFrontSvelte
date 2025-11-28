@@ -1,3 +1,5 @@
+<!-- ВЕРИФИКАЦИЯ СОЗДАНИЯ АККА -->
+
 <script lang="ts">
   import WorkplaceCreate from '$lib/components/authorization/create_acc/verify/WorkplaceCreate.svelte';
 </script>

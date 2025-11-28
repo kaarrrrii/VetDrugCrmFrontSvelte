@@ -49,6 +49,8 @@
 	}
 
 	.create__button:active {
+		width: 12.3vw;
+		height: 3.8vw;
 		background-color: #2D5ACB;
 		box-shadow: 
 			inset 0px 5px 5px rgba(46, 90, 199, 1),

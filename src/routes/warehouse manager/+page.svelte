@@ -1,3 +1,4 @@
+<!-- ЗАВЕДУЮЩИЙ СКЛАДОМ -->
 <script lang="ts">
 	import Workspace from '$lib/components/main_page/Workspace.svelte';
 </script>

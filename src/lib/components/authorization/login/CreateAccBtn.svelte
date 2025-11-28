@@ -46,6 +46,8 @@
 	}
 
 	.logout__button:active {
+		width: 12.3vw;
+		height: 3.8vw;
 		background-color: #f6f6f6;
 		box-shadow: 
 			0px 3px 10px 1px #CDCDCD;

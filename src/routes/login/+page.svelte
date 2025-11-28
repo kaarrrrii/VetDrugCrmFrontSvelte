@@ -1,3 +1,4 @@
+<!-- ВХОД В АКК -->
 <script>
   import Workplace from '$lib/components/authorization/login/Workplace.svelte';
 </script>
