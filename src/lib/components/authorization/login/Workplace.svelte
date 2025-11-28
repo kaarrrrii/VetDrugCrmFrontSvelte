@@ -1,6 +1,7 @@
 <script lang="ts">
-	import TextInput from '$lib/components/login/TextInput.svelte';
-	import SignInBtn from '$lib/components/login/SignInBtn.svelte';
+	import TextInput from '$lib/components/authorization/login/TextInput.svelte';
+	import SignInBtn from '$lib/components/authorization/login/SignInBtn.svelte';
+	import CreateAccBtn from '$lib/components/authorization/login/CreateAccBtn.svelte';
 </script>
 
 <section class="workplace">
@@ -13,7 +14,10 @@
 				title="Пароль"
 			/>
 		</section>
-	<SignInBtn />
+	<section class="btns">
+		<SignInBtn />
+		<CreateAccBtn />
+	</section>
 </section>
 
 <style>
@@ -37,9 +41,19 @@
 		box-shadow: -0.5px 4px 6px rgba(107, 107, 107, 0.25);
 	}
 
+	.input {
+		margin-bottom: 1vw;
+	}
+
 	.title {
 		font-family: "Montserrat", sans-serif;
 		font-weight: 750;
 		font-size: 3.5vw;
+	}
+
+	.btns {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 </style>

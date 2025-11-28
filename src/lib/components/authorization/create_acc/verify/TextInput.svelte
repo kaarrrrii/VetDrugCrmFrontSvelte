@@ -21,7 +21,7 @@
 	}
 	
 	.text__input__position {
-		margin: 1vw;
+		margin: 1vw 0vw;
 	}
 
 	.text__input {
@@ -31,8 +31,8 @@
 		border: 0.15vw solid #D6D6D6;
 		box-shadow: -1px 3px 10px rgba(180, 180, 180, 0.5);
 		border-radius: 1vw;
-		width: 15vw;
-		aspect-ratio: 20/3;
+		width: 25vw;
+		aspect-ratio: 20/2;
 	}
 
 	.text {

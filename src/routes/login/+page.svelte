@@ -1,5 +1,5 @@
 <script>
-  import Workplace from '$lib/components/login/Workplace.svelte';
+  import Workplace from '$lib/components/authorization/login/Workplace.svelte';
 </script>
 
 <section class="workplace_position">
